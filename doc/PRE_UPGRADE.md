@@ -1,1 +1,1 @@
-This is a dummy disclaimer to display prior to any upgrade
+If this upgrade bumps the pinned Obsidian version, the server will re-download Obsidian from its official source on the next start, so outbound internet access is needed. The upgrade also rebuilds the app from source, which can take a few minutes.
