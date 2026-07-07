@@ -1,7 +1,5 @@
-This is a dummy disclaimer to display after the install
+Ignis is now available at <https://__DOMAIN____PATH__>.
 
-The app url is <https://__DOMAIN____PATH__>
+Access is protected by YunoHost SSO — Ignis has no login of its own, so keep the permission restricted to trusted YunoHost users and **never** open it to visitors.
 
-The app install dir is `__INSTALL_DIR__`
-
-The app id is `__ID__`
+A default "My Vault" is created on first start if no vaults exist. Your vaults live under `__DATA_DIR__/vaults`; you can drop existing Obsidian vault directories there to import them.

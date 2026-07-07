@@ -1,5 +1,5 @@
 [Unit]
-Description=Small description of the service
+Description=Ignis: browser-based Obsidian client
 After=network.target
 
 [Service]
@@ -7,12 +7,22 @@ Type=simple
 User=__APP__
 Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
-ExecStart=__INSTALL_DIR__/script
+
+Environment="PATH=__PATH_WITH_NODEJS__"
+Environment="NODE_ENV=production"
+Environment="PORT=__PORT__"
+Environment="VAULT_ROOT=__DATA_DIR__/vaults"
+Environment="DATA_ROOT=__DATA_DIR__/data"
+Environment="OBSIDIAN_ASSETS_PATH=__DATA_DIR__/obsidian-app"
+# Create a "My Vault" on first start when no vaults exist yet, so a fresh install isn't empty.
+Environment="AUTO_CREATE_DEFAULT=true"
+
+ExecStart=__NODEJS_DIR__/node __INSTALL_DIR__/apps/ignis-server/server/index.js
+Restart=on-failure
+
 StandardOutput=append:/var/log/__APP__/__APP__.log
 StandardError=inherit
 
-### Depending on specificities of your service/app, you may need to tweak these
-### .. but this should be a good baseline
 # Sandboxing options to harden security
 # Details for these options: https://www.freedesktop.org/software/systemd/man/systemd.exec.html
 NoNewPrivileges=yes
