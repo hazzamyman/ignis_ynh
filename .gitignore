@@ -1,3 +1,7 @@
 *~
 *.sw[op]
 .DS_Store
+
+# Playwright MCP scratch output (screenshots captured for docs, etc.)
+.playwright-mcp/
+ignis-screenshot*.jpeg

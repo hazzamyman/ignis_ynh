@@ -33,6 +33,10 @@ Obsidian itself is **not** distributed with this package: on first install, the 
 
 **Demo:** <https://ignis-demo.thiefling.com>
 
+## Screenshots
+
+![Screenshot of Ignis](./doc/screenshots/ignis.jpg)
+
 ## Disclaimers / important information
 
 - Ignis has **no authentication of its own** and relies entirely on YunoHost's SSO. Never open the app's permission to *visitors* — anyone reaching the URL could read and write the vault. Keep it restricted to logged-in YunoHost users.
