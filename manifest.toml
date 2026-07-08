@@ -9,7 +9,7 @@ description.fr = "Utilisez votre coffre Obsidian dans le navigateur, derrière l
 
 version = "0.8.8~ynh1"
 
-maintainers = ["Harry Nolan-Holmes"]
+maintainers = ["hazzamyman"]
 
 [upstream]
 license = "AGPL-3.0-only"
